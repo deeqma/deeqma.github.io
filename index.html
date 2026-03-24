@@ -1,15 +1,391 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Simple Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohamed Ali | Backend Engineer</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<h1>Welcome</h1>
-<p>This is a simple static HTML page.</p>
+<nav>
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</nav>
 
-<p>I am deeq also known as Mohamed Ali.</p>
+<header>
+    <div class="wrap header-layout">
+        <div class="avatar-wrap">
+            <img src="assets/me.jpg" alt="Mohamed Ali" class="avatar" />
+        </div>
+        <div class="header-text">
+            <h1>Mohamed Ali</h1>
+            <h2>Backend Engineer — Java, Spring | CI/CD | Monitoring</h2>
+            <p>I have just over two years of experience, building backend systems using Java and Spring framework,
+                deploying with Docker, automating CI/CD pipelines, and monitoring production applications.</p>
+            <div class="header-actions">
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="#contact" class="btn-secondary">Contact Me</a>
+            </div>
+        </div>
+    </div>
+</header>
 
+<main>
+
+    <!-- About -->
+    <section id="about">
+        <div class="wrap">
+            <h2 class="section-label">About</h2>
+            <div class="about-text">
+                <p>
+                    I'm Mohamed, 24, based in Sweden and open to relocation or commute within Sweden.
+                    I studied full-stack development at vocational higher education for two years, including six months of internship at Wacoco.
+                </p>
+                <p>
+                    After the internship I continued at Wacoco, where I took responsibility for the backend side as well as some frontend across multiple client projects.
+                    I built systems used by real customers, handled deployments, set up CI/CD pipelines, and kept applications running in production.
+                    I also did a two month internship at Ingela where I jumped into an already running production environment and contributed.
+                </p>
+                <p>
+                    I am now looking for a new position. As a person I am easy to work with and straightforward.
+                    I do not like wasting time, if I see a problem I will point it out or fix it.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <div class="wrap">
+            <h2 class="section-label">Skills</h2>
+            <div class="skills-grid">
+
+                <div class="skill-row">
+                    <span class="skill-category">Backend</span>
+                    <div class="skill-icons">
+                        <div class="skill-icon"><img src="assets/java-svgrepo-com.svg" alt="Java" /><span>Java</span></div>
+                        <div class="skill-icon"><img src="assets/spring-boot-svgrepo-com.svg" alt="Spring Boot" /><span>Spring Boot</span></div>
+                        <div class="skill-icon"><img src="assets/maven-svgrepo.svg" alt="Maven" /><span>Maven</span></div>
+                        <div class="skill-icon"><img src="assets/postgresql-svgrepo-com.svg" alt="PostgreSQL" /><span>PostgreSQL with Spring JPA</span></div>
+                        <div class="skill-icon"><img src="assets/gradle-svgrepo-com.svg" alt="Gradle" /><span>Gradle</span></div>
+                    </div>
+                </div>
+
+                <div class="skill-row">
+                    <span class="skill-category">DevOps</span>
+                    <div class="skill-icons">
+                        <div class="skill-icon"><img src="assets/docker-svgrepo-com.svg" alt="Docker" /><span>Docker</span></div>
+                        <div class="skill-icon"><img src="assets/linux-svgrepo-com.svg" alt="Linux" /><span>Linux</span></div>
+                        <div class="skill-icon"><img src="assets/sonarqube-svgrepo.svg" alt="SonarQube" /><span>SonarQube</span></div>
+                        <div class="skill-icon"><img src="assets/aws-svgrepo-com.svg" alt="AWS" /><span>AWS</span></div>
+                        <div class="skill-icon"><img src="assets/jenkins-svgrepo-com.svg" alt="Jenkins" /><span>Jenkins</span></div>
+                        <div class="skill-icon"><img src="assets/kubernetes-svgrepo-com.svg" alt="Kubernetes" /><span>Kubernetes</span></div>
+                        <div class="skill-icon"><img src="assets/terraform-svgrepo-com.svg" alt="Terraform" /><span>Terraform</span></div>
+                    </div>
+                </div>
+
+                <div class="skill-row">
+                    <span class="skill-category">Tooling</span>
+                    <div class="skill-icons">
+                        <div class="skill-icon"><img src="assets/jira-svgrepo-com.svg" alt="Jira" /><span>Jira</span></div>
+                        <div class="skill-icon"><img src="assets/intellij-idea-svgrepo-com.svg" alt="IntelliJ" /><span>IntelliJ</span></div>
+                        <div class="skill-icon"><img src="assets/postman-icon-svgrepo-com.svg" alt="Postman" /><span>Postman</span></div>
+                        <div class="skill-icon"><img src="assets/vim-svgrepo-com.svg" alt="Vim" /><span>Vim</span></div>
+                        <div class="skill-icon"><img src="assets/vscode-svgrepo-com.svg" alt="VS Code" /><span>VS Code</span></div>
+                        <div class="skill-icon"><img src="assets/git-svgrepo-com.svg" alt="Git" /><span>Git</span></div>
+                        <div class="skill-icon"><img src="assets/github-svgrepo-com.svg" alt="GitHub" /><span>GitHub/GitHub Action</span></div>
+                    </div>
+                </div>
+
+                <div class="skill-row">
+                    <span class="skill-category">Frontend</span>
+                    <div class="skill-icons">
+                        <div class="skill-icon"><img src="assets/html-svgrepo-com.svg" alt="HTML" /><span>HTML</span></div>
+                        <div class="skill-icon"><img src="assets/vue-svgrepo-com.svg" alt="Vue 3" /><span>Vue 3</span></div>
+                        <div class="skill-icon"><img src="assets/js-svgrepo-com.svg" alt="JavaScript" /><span>JavaScript</span></div>
+                        <div class="skill-icon"><img src="assets/nodejs-svgrepo-com.svg" alt="Node.js" /><span>Node.js</span></div>
+                        <div class="skill-icon"><img src="assets/react-svgrepo-com.svg" alt="React" /><span>React</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+        <div class="wrap">
+            <h2 class="section-label">Experience</h2>
+            <div class="exp-list">
+
+                <article class="exp-item">
+                    <div class="exp-header">
+                        <div>
+                            <span class="exp-company">Wacoco IT Consulting</span>
+                            <span class="exp-role">Systems Developer</span>
+                        </div>
+                        <span class="exp-date">Jun 2024 - Jan 2026</span>
+                    </div>
+                    <ul>
+                        <li>Designed and implemented a centralized authentication and authorization service using Spring Security, supporting multiple login methods including BankID, email and password. Also built the frontend for it using React.</li>
+                        <li>Built an incident reporting system where employees can report work-related incidents such as sick leave, late arrivals, or internal reports. The responsible manager is automatically notified and can escalate incidents to the regional manager if needed. Ensured sensitive personal data is handled with encryption in compliance with GDPR.</li>
+                        <li>Developed an email micro-service using Spring Boot and SendGrid that handles all outgoing email across multiple systems. The service tracks email status (delivered, opened, or marked as spam) and stores data securely with encryption.</li>
+                        <li>Set up CI/CD pipelines for all client projects, including code quality checks with SonarQube, versioning, and deployment to staging and production environments.</li>
+                        <li>Tested React components using Storybook.</li>
+                        <li>Implemented monitoring with Prometheus and configured alerts that notify the team via Slack for issues such as high CPU/memory usage or database disconnection.</li>
+                        <li>Migrated infrastructure from AWS to Fly.io due to high costs — Fly.io is more cost-effective and better suited for startup environments.</li>
+                    </ul>
+                </article>
+
+                <article class="exp-item">
+                    <div class="exp-header">
+                        <div>
+                            <span class="exp-company">Ingela</span>
+                            <span class="exp-role">Java Backend / DevOps Internship</span>
+                        </div>
+                        <span class="exp-date">Aug 2024 - Sep 2024</span>
+                    </div>
+                    <ul>
+                        <li>Worked with and documented complex ArgoCD and Helm charts in Google Kubernetes Engine (GKE).</li>
+                        <li>Refactored Spring Cloud Gateway by migrating routing configuration from YAML to Java-based configuration, improved logging, and wrote unit tests.</li>
+                        <li>Wrote Swagger documentation for multiple micro-service APIs.</li>
+                        <li>Integrated Prometheus and Alertmanager with Slack to monitor containers in GKE.</li>
+                    </ul>
+                </article>
+
+                <article class="exp-item">
+                    <div class="exp-header">
+                        <div>
+                            <span class="exp-company">Wacoco IT Consulting</span>
+                            <span class="exp-role">LIA Internship</span>
+                        </div>
+                        <span class="exp-date">Nov 2023 - May 2024</span>
+                    </div>
+                    <ul>
+                        <li>Contributed to developing a data collection system using Java, Spring Boot, PostgreSQL, Kafka, and Apache Camel.</li>
+                        <li>Deployed and managed development and production environments (Dev, Stage, and Prod).</li>
+                        <li>After the first 3 months, took on a team-lead role by mentoring new interns and organizing development work.</li>
+                        <li>Tested and integrated external APIs and scrapers to ensure high data quality.</li>
+                        <li>Worked in an agile environment with two-week sprints, participated in sprint reviews, and presented product updates to clients.</li>
+                    </ul>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="wrap">
+            <h2 class="section-label">Projects</h2>
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <h3>Monitor</h3>
+                    <p>
+                        Self-hosted monitoring UI tailored made for Spring Actuator which is subproject of Spring Boot that allows you to monitoring, metrics, health checks, and management endpoints for Spring applications.
+                        Monitor UI allows you to Register any Spring Boot app as long as they have Actuator dependecy which most production Spring Boot apps do,
+                        After registering it auto colects live CPU, JVM memory, GC, HTTP status, response time, health of your app, and stores all the data in a PostgreSQL database for historical analysis and troubleshooting.
+                    </p>
+                    <p>
+                        Feature include: JWT authentication, multi-user isolation, live charts of metrics and health data.
+                        Pagination, Snapshot CSV export, and more to come.
+                    </p>
+                    <p>
+                        I built Monitor UI as a simpler and more secure alternative to existing tools like Grafana,
+                        Prometheus, and Spring Boot Admin. Many of these platforms require either, complex configuration, inherits actuator security risks or takes too long to setup.
+                        Monitor UI focuses on modern design,minimal setup, and straightforward navigation so developers/ PM can start monitoring with just an Actuator URL. It was designed with security in mind,
+                        ensuring sensitive application details are never exposed through the API even server URL.
+                    </p>
+                    <a href="https://github.com/deeqma/monitor" target="_blank" rel="noopener">View Source code in GitHub</a>
+                    <div class="project-stack">
+                        <img src="assets/java-svgrepo-com.svg" alt="Java" title="Java" />
+                        <img src="assets/spring-boot-svgrepo-com.svg" alt="Spring Boot" title="Spring Boot" />
+                        <img src="assets/vue-svgrepo-com.svg" alt="Vue 3" title="Vue 3" />
+                        <img src="assets/docker-svgrepo-com.svg" alt="Docker" title="Docker" />
+                        <img src="assets/postgresql-svgrepo-com.svg" alt="PostgreSQL" title="PostgreSQL" />
+                        <img src="assets/maven-svgrepo.svg" alt="Maven" title="Maven" />
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3>TrackMe</h3>
+                    <p>
+                        TrackMe is made for Monitor UI to collect additional data but it can also be a stand alone library that
+                        monitors and captures incoming HTTP traffic in any Spring Boot MVC application with one dependency and a few properties.
+                    </p>
+                    <p>
+                        Intercepts every HTTP request and captures, timestamp, HTTP method, path, status code, IP address, response time,
+                        request size, and headers. All captured data is exposed to the user who decides what to do with it,
+                        troubleshoot, store, analyze, or forward to an external monitoring server for better visualization.
+                    </p>
+                    <p>
+                        Features include path whitelisting and blacklisting, header collection with value masking, IP masking, async delivery with drop-on-failure,
+                        in-memory buffer capped at 200 records, and a built-in dashboard or plain JSON API at a user-configured path.
+                    </p>
+                    <p>
+                        Built to understand, practice publishing a reusable library dependency.
+                    </p>
+                    <div class="project-stack">
+                        <img src="assets/java-svgrepo-com.svg" alt="Java" title="Java" />
+                        <img src="assets/spring-boot-svgrepo-com.svg" alt="Spring Boot" title="Spring Boot" />
+                        <img src="assets/maven-svgrepo.svg" alt="Maven" title="Maven" />
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3>Music Application</h3>
+                    <p>
+                        A personal self-hosted music platform. The platform allows you to Upload your own MP3 audio, and stream it offline,
+                    </p>
+                    <p>
+                        Features include: pagination, metadata editing, searching, listing, filtering by Song name, artist, album, release year.
+                        Like songs, create up to 30 public or private playlists with shareable links,
+                        and user playlist isolation, JWT authentication, MP3 upload with SHA-256 duplicate detection, and HTTP range-based audio streaming.
+                    </p>
+                    <p>
+                        Built to practice building a full-stack self-hosted app, over all writing better code, Integration tests with Testcontainers,
+                        and more understanding of web development.
+                    </p>
+                    <a href="https://github.com/deeqma/music-app" target="_blank" rel="noopener">View Source code in GitHub</a>
+                    <div class="project-stack">
+                        <img src="assets/java-svgrepo-com.svg" alt="Java" title="Java" />
+                        <img src="assets/spring-boot-svgrepo-com.svg" alt="Spring Boot" title="Spring Boot" />
+                        <img src="assets/react-svgrepo-com.svg" alt="React" title="React" />
+                        <img src="assets/docker-svgrepo-com.svg" alt="Docker" title="Docker" />
+                        <img src="assets/postgresql-svgrepo-com.svg" alt="PostgreSQL" title="PostgreSQL" />
+                        <img src="assets/maven-svgrepo.svg" alt="Maven" title="Maven" />
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <div class="wrap">
+            <h2 class="section-label">Education</h2>
+            <div class="edu-list">
+
+                <article class="edu-item">
+                    <div class="edu-header">
+                        <div>
+                            <span class="edu-school">Jensen Yrkeshögskolan Stockholm</span>
+                            <span class="edu-degree">Java Developer with Cloud Focus</span>
+                        </div>
+                        <span class="edu-date">Aug 2022 – Jun 2024</span>
+                    </div>
+                    <p>
+                        A two-year vocational higher education program focused on Java and Spring framework,
+                        Docker, CI/CD automation, AWS (Amazon Web Services) and architecture, fundamentals of frontend development,
+                        and agile systems development methodologies.
+                    </p>
+                </article>
+
+                <article class="edu-item">
+                    <div class="edu-header">
+                        <div>
+                            <span class="edu-school">NTI Gymnasiet Västerås</span>
+                            <span class="edu-degree">Electricity, Computer and Communication Technology</span>
+                        </div>
+                        <span class="edu-date">Aug 2018 – Jun 2021</span>
+                    </div>
+                    <p>
+                        High school program covering computer hardware, operating
+                        systems, windows server, IT support (troubleshooting both hardware and software), network fundamentals(ip address, OSI model, switch configurations exc..),
+                        how devices communicate localy and over the internet.
+                        and programing 1&2 C#, building small games using C# like card game, guessing cards exc... aswell as understanding Electronics and electrical circuits in general,
+                        and basic mechatronics programming with Arduino uno.
+                    </p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications">
+        <div class="wrap">
+            <h2 class="section-label">Certifications</h2>
+            <div class="certs-grid">
+                <div class="cert-item">
+                    <img src="assets/aws-svgrepo-com.svg" alt="AWS" />
+                    <div>
+                        <span class="cert-name">AWS Cloud Practitioner</span>
+                        <span class="cert-issuer">Amazon Web Services . 2023</span>
+                        <p class="cert-desc">Foundational knowledge of cloud concepts, core AWS services,
+                            security and compliance, billing, pricing, and cloud architecture principles.</p>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <img src="assets/networking-laptop-svgrepo-com.svg" alt="Networking" />
+                    <div>
+                        <span class="cert-name">MTA 98-366 Networking Fundamentals</span>
+                        <span class="cert-issuer">Microsoft · 2021</span>
+                        <p class="cert-desc">Entry-level knowledge of network infrastructure,
+                            IP addressing, network protocols, network hardware, and basic troubleshooting of wired and wireless networks.</p>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <img src="assets/windows-svgrepo-com.svg" alt="Windows OS" />
+                    <div>
+                        <span class="cert-name">MTA 98-349 Windows OS Fundamentals</span>
+                        <span class="cert-issuer">Microsoft · 2021</span>
+                        <p class="cert-desc">Entry-level knowledge of installing, configuring, managing files and folders, device management,
+                            security, and troubleshooting Windows operating systems.</p>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <img src="assets/security-svgrepo-com.svg" alt="Security" />
+                    <div>
+                        <span class="cert-name">MTA 98-367 Security Fundamentals</span>
+                        <span class="cert-issuer">Microsoft · 2021</span>
+                        <p class="cert-desc">Entry-level knowledge of core security principles, network and operating system security, authentication, permissions, and protection against common threats and vulnerabilities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="wrap contact-layout">
+            <div>
+                <h2>Get in Touch</h2>
+            </div>
+            <div class="contact-links">
+                <a href="mailto:mohamedaliofficiellpost@gmail.com" class="contact-btn">
+                    <img src="assets/gmail-svgrepo-com.svg" alt="" />
+                    Gmail
+                </a>
+                <a href="https://www.linkedin.com/in/mohamed-ali-3b976b261/" target="_blank" rel="noopener" class="contact-btn">
+                    <img src="assets/linkedin-svgrepo-com.svg" alt="" />
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="wrap">
+        <p>DeeQ · 2026</p>
+    </div>
+</footer>
+
+<script src="main.js"></script>
 </body>
 </html>
